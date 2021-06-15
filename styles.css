@@ -1,0 +1,67 @@
+body{background: rgb(25, 25, 25); color:seashell; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+nav /*,div, main, img, .icons*/{border-bottom: 1px solid ;}
+main{position: relative;}
+#present{
+    position: absolute;
+    bottom:5%;
+    left: 2%;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+li{float: left;}
+li a{
+    display: block;
+    color:rgb(13, 156, 212);
+    text-align: center;
+    padding: 1.5em;
+    font-size: 110%;
+    text-decoration: none;
+}
+.nav li a:hover{
+    background-color: #111;
+    color:violet;
+    
+}
+.icons li a:hover{
+    color:violet;
+    transform: skewY(170deg);
+    text-shadow: 3px 3px 1px rgb(13, 156, 212);
+}
+
+h1 {font-size: 400%;}
+h2 {font-size: 310%;}
+h1, h2, .icons {text-shadow:2px 2px 3px violet ;}
+#present, img{float:right; width:50%;}
+img{background: rgb(25, 25, 25);}
+main::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+section{background: rgb(25, 25, 125);}
+
+@media screen and (max-width: 1400px) {
+    h1 {font-size: 300%;}
+    h2 {font-size: 250%;}
+  }
+
+@media screen and (max-width: 1000px) {
+h1 {font-size: 200%;}
+h2 {font-size: 150%;}
+li a{font-size: 90%;}
+}
+@media screen and (max-width: 700px) {
+    #logo{display: none;}
+    #present {float:none; margin: auto; width: 100%; text-align: center; left: 0%;}
+    ul.icons{margin: auto;}
+    .icons li{width: 33.3%;}
+    
+    main{height: 300px; background-image: url(91657.jpg); background-size: 100% 300px;}
+    li{font-size: 70%;}
+     
+  }
+
