@@ -8,34 +8,140 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <nav>
+
+<body >
+    
+    <audio loop autoplay id="myAudio">
+        <source src="musica.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    <nav class="topnav" id="myTopnav"> 
         <ul class="nav">
             <li><a href=#>Inicio</a></li>
-            <li><a href=#>Portafolio</a></li>
-            <li><a href=#>Contacto</a></li>
-            
+            <li><a href=#sobreMi>Sobre mí</a></li>
+            <li><a href=#contactanos>Contacto</a></li>
+         
         </ul>
+        <a href="javascript:void(0);" class="icon" onclick="navRes()">
+            <i class="fa fa-bars"></i>
+        </a>
     </nav>
-    <main> 
+    <main class=webPage> 
         <div id="present"> 
-            <h1>Hola, soy Piero</h1>
-            <h2>Desarrollador y docente de matemática</h2>
+            <h1 onmouseover="playAudio()">Hola, soy Piero</h1>
+            <h2 id="card">Desarrollador y docente de matemática</h2>
             <ul class="icons">
-                <li ><a target="_blank" href="https://github.com/Shadowrunner11"><i class="fa fa-github fa-4x"></i></a></li>
+                <li><a target="_blank" href="https://github.com/Shadowrunner11"><i class="fa fa-github fa-4x"></i></a></li>
                 <li><a target="_blank" href="https://www.facebook.com/koaladoomer12"><i class="fa fa-facebook fa-4x"></i></a></li>
                 <li><a target="_blank" href="https://www.youtube.com/channel/UClR3t1vmvCTqm0BJqp5ralg"><i class="fa fa-youtube fa-4x"></i></a></li>
             </ul>
     
         </div>
-        <img  id="logo" alt="Soy una imagen" src="Recurso146.png" title="http://www.freepik.com Designed by upklyak Freepik"> 
+        <img  id="logo" alt="Soy una imagen" src="imagenes/Recurso146.png" title="http://www.freepik.com Designed by upklyak Freepik"> 
         
 
     </main>
-    <section>matematicadivina@gmail.com</section>
+
     
 
+    <section class="flex-container webPage" id="sobreMi">
+        
+        <div class="flex-izq flex-item">
+            <img class="logos" alt="" src="imagenes/imagen1.jpg">
+            <h2>Testimonios</h2>
+            <div class="texto">
+                <h3>Edvin, Guatemala</h3>
+                <p><em>"Excelente desarrollador y comprometido con su trabajo"</em></p>
+                <h3>Edvin, Guatemala</h3>
+                <p><em>"Excelente desarrollador y comprometido con su trabajo"</em></p>
+                <h3>Edvin, Guatemala</h3>
+                <p><em>"Excelente desarrollador y comprometido con su trabajo"</em></p>
+            </div>
+        </div>
+        <div class="flex-centro flex-item">
+            <img  class="logos" alt="" src="imagenes/Imagen2.jpg">
+            <h2>Habilidades web</h2>
+            <p>HTML</p>
+            <div class="container">
+            <div class="skills html">90%</div>
+            </div>
 
+            <p>CSS</p>
+            <div class="container">
+            <div class="skills css">80%</div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="container">
+            <div class="skills js">65%</div>
+            </div>
+
+            <p>PHP</p>
+            <div class="container">
+            <div class="skills php">60%</div>
+            </div>
+        </div>
+        <div class="flex-dere flex-item">
+           <img  class="logos" alt="" src="imagenes/Imagen3.jpg">
+           <h2>Domino de lenguajes</h2>
+           <p>Python</p>
+            <div class="container">
+            <div class="skills python">95%</div>
+            </div>
+
+            <p>Java</p>
+            <div class="container">
+            <div class="skills java">70%</div>
+            </div>
+
+            <p>SQL</p>
+            <div class="container">
+            <div class="skills sql">60%</div>
+            </div>
+
+            <p>Cobol</p>
+            <div class="container">
+            <div class="skills cobol">60%</div>
+            </div>
+        </div>
+
+    </section>
+
+    <h1>Clases</h1>
+
+    <section class="ifracontainer webPage">
+        
+        <iframe src="https://www.youtube.com/embed/vsSY9AVLoq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <h1>Ubícanos</h1>
+
+    <section class="ifracontainer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.75763494609!2d-76.24360729394722!3d-9.930519174067518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a7c2e19c156a21%3A0x7edac1232de74eab!2sHotel%20Finha!5e0!3m2!1ses!2spe!4v1623802776106!5m2!1ses!2spe" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+
+
+    <h1>Contáctanos</h1>
+    <section id="contactanos">
+    <form class="webPage" method="POST" >
+        <label for="inputName">Nombre</label>
+        <input type="text" id="inputName" name="nombres">
+        <label for="inputEmail">Correo</label>
+        <input type="email" id="inputEmail" name="email">
+        <label for="textArea">Mensaje</label>
+        <textarea rows=4 id="textArea" name="mensaje"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+    </section>
+    
+    
+
+    <footer>Todos los derechos reservados a PR®</footer>
+    
+    
+
+<script src="script.js"></script>
     
 </body>
 </html>
